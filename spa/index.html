@@ -1,0 +1,61 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SPA</title>
+    <script src="scripts/scriptCarrega.js"></script>
+    <script src="scripts/scriptAcoes.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div >
+    <span id="aeronaveData" >
+        <div class="dataAeronave">
+            <div class="fieldsData">
+                <label> Identificador:</label>
+                <label> Nome:</label>
+                <label> Ano:</label>
+                <label> Marca:</label>
+                <label> Vendido:</label>
+                <label> Descrição:</label>
+                <label> Criado:</label>
+            </div>
+            <div class="fieldsData">
+                <input type="text" id="idAeronave" name="idAeronave" disabled value="0">
+                <input type="text" id="nomeAeronave" name="nomeAeronave">
+                <input type="number" id="anoAeronave" name="anoAeronave">
+                <select name="marcaAeronave" id="marcaAeronave" >
+                    <option value="Embraer">Embraer</option>
+                    <option value="Boeing">Boeing</option>
+                    <option value="Airbus">Airbus</option>
+                </select>
+                <select name="vendidoAeronave" id="vendidoAeronave" >
+                    <option value="true">Vendido</option>
+                    <option value="false">Não vendido</option>
+                </select>
+                <input type="text" id="criadoAeronave" name="criadoAeronave" disabled>
+                <textarea id="descricaoAeronave" name="descricaoAeronave" rows="4" cols="50"></textarea>
+            </div>
+        </div>
+        <button id='salvaButton' onclick='salvar()'>Salvar</button>
+    </span>
+    <br/><br/>
+    <br/><br/>
+    <input type="text" id="filtroAeronave" name="filtroAeronave">
+    <button id='filtroButton' onclick='filtro()'>Filtrar</button>
+    <span id="aeronavesGrid" ></span>
+    <br/><br/>
+    <span id="marcaBoeing" ></span>
+    <br/>
+    <span id="marcaEmbraer" ></span>
+    <br/>
+    <span id="marcaAirbus" ></span>
+    <br/>
+    <span id="week" ></span>
+    <br/>
+    <span id="sold" ></span>
+    <br/>
+    <span id="decade" ></span>
+    <br/>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.dataAeronave {
+    display: flex;
+}
+
+.fieldsData {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.div-rowAeronave {
+    display: flex;
+}
+
+.div-columnId {
+    width: 25px;
+}
+
+.div-columnText {
+    width: 150px;
+}
+
+.div-columnNumber {
+    width: 45px;
+}
+
+.div-columnBool {
+    width: 70px;
+}
